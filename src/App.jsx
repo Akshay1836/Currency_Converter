@@ -16,7 +16,7 @@ function App() {
     setTo(e.target.value);
   }
   const search = async () => {
-    // const url = `https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=${from}&to=${to}&amount=${amount}`;
+    const url = `https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=${from}&to=${to}&amount=${amount}`;
     // const url = 'https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=USD&to=EUR&amount=750';
     const options = {
       method: "GET",
