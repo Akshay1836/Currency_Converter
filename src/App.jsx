@@ -127,14 +127,14 @@ function App() {
 
               <button
                 type="button"
-                className="rounded-md bg-blue-900 px-3 py-2 mt-6 text-sm font-semibold text-white shadow-md transition ease-in-out hover:bg-white/80 hover:text-blue-900"
+                className="rounded-md bg-blue-900 px-3 py-2 mt-8 md:mt-6 text-sm font-semibold text-white shadow-md transition ease-in-out hover:bg-white/80 hover:text-blue-900"
                 onClick={search}
               >
                 CONVERT
               </button>
             </div>
             {amount?
-            <div className="text-black flex flex-col h-1/2">
+            <div className="text-black flex flex-col h-1/2 py-0">
                 <div>
                   <div>
                     <p className="text-2xl font-light text-blue-900 text-center px-4">
