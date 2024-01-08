@@ -16,7 +16,7 @@ function App() {
     setTo(e.target.value);
   }
   const search = async () => {
-    // const url = `https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=${from}&to=${to}&amount=${amount}`;
+    const url = `https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=${from}&to=${to}&amount=${amount}`;
     // const url = 'https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=USD&to=EUR&amount=750';
     const options = {
       method: "GET",
@@ -76,7 +76,7 @@ function App() {
                   AMOUNT
                 </label>
                 <input
-                  className="flex h-10 w-full text-black rounded-md border px-3"
+                  className="flex h-10 w-full text-black rounded-md border-blue-950 border-2 px-3"
                   type="text"
                   placeholder=""
                   id="name"
@@ -92,7 +92,7 @@ function App() {
                   FROM
                 </label>
                 <select
-                  className="flex h-10 w-full text-black rounded-md px-3 text-md"
+                  className="flex h-10 w-full text-black rounded-md px-3 text-md border-blue-950 border-2"
                   
                   // onChange={(e) => setFrom(e.target.value)}
                   onChange={optionFrom}
@@ -113,7 +113,7 @@ function App() {
                   TO
                 </label>
                 <select
-                  className="flex h-10 w-full text-black rounded-md px-3 text-md"
+                  className="flex h-10 w-full text-black rounded-md px-3 text-md border-blue-950 border-2"
                   
                   // onChange={(e) => setFrom(e.target.value)}
                   onChange={optionTo}
@@ -134,7 +134,7 @@ function App() {
               </button>
             </div>
             {amount?
-            <div className="text-black flex flex-col h-1/2 py-0">
+            <div className="text-black flex flex-col h-1/2 py-2">
                 <div>
                   <div>
                     <p className="text-2xl font-light text-blue-900 text-center px-4">
